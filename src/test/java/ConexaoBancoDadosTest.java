@@ -4,18 +4,18 @@ import org.junit.Test;
 
 public class ConexaoBancoDadosTest extends TestCase{
     @Test
-    void deveRetornarUrl(){
+    public void testDeveRetornarUrl(){
         ConexaoBancoDados.getInstance().setUrl("jdbc:localhost:8888/bd");
         assertEquals("jdbc:localhost:8888/bd", ConexaoBancoDados.getInstance().getUrl());
     }
     @Test
-    public void deveRetornarUser() {
+    public void testDeveRetornarUser() {
         ConexaoBancoDados.getInstance().setUser("fabricio");
         assertEquals("fabricio", ConexaoBancoDados.getInstance().getUser());
     }
 
     @Test
-    public void deveRetornarSenha() {
+    public void testDeveRetornarSenha() {
         ConexaoBancoDados.getInstance().setSenha("123");
         assertEquals("123", ConexaoBancoDados.getInstance().getSenha());
     }
