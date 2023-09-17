@@ -9,13 +9,13 @@ public class ConexaoBancoDadosTest extends TestCase{
         assertEquals("jdbc:localhost:8888/bd", ConexaoBancoDados.getInstance().getUrl());
     }
     @Test
-    public void testSetUser() {
+    public void deveRetornarUser() {
         ConexaoBancoDados.getInstance().setUser("fabricio");
         assertEquals("fabricio", ConexaoBancoDados.getInstance().getUser());
     }
 
     @Test
-    public void testSetSenha() {
+    public void deveRetornarSenha() {
         ConexaoBancoDados.getInstance().setSenha("123");
         assertEquals("123", ConexaoBancoDados.getInstance().getSenha());
     }
