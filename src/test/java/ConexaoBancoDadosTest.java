@@ -10,13 +10,13 @@ public class ConexaoBancoDadosTest extends TestCase{
     }
     @Test
     public void testSetUser() {
-        Singleton.getInstance().setUser("fabricio");
-        assertEquals("fabricio", Singleton.getInstance().getUser());
+        ConexaoBancoDados.getInstance().setUser("fabricio");
+        assertEquals("fabricio", ConexaoBancoDados.getInstance().getUser());
     }
 
     @Test
     public void testSetSenha() {
-        Singleton.getInstance().setSenha("123");
-        assertEquals("123", Singleton.getInstance().getSenha());
+        ConexaoBancoDados.getInstance().setSenha("123");
+        assertEquals("123", ConexaoBancoDados.getInstance().getSenha());
     }
 }
